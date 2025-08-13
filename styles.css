@@ -154,7 +154,7 @@ body {
 }
 .person > .personreview {
   position: relative;
-  top: -110px;
+  top: -130px;
   left: -120px;
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(5px);
@@ -165,12 +165,13 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 2px 2px 5px grey;
+  z-index: 1;
 }
 .person > .map {
   position: absolute;
   top: -20px;
-  left: 300px;
-  width: 600px;
+  left: 260px;
+  width: 500px;
   height: 350px;
 }
 .personreview > p {
@@ -261,6 +262,19 @@ body {
   height: 40px;
   cursor: pointer;
 }
+.schedule > .searchbutton:hover {
+  background-color: orange;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px rgba(255, 123, 0, 0.3);
+  transform: scale(1.05);
+}
 .searchbutton > img {
   width: 50%;
   height: 50%;
@@ -270,6 +284,7 @@ body {
   border-radius: 50px 50px;
   border: none;
   width: 120px;
+  outline: none;
 }
 
 .servicesheader {
@@ -298,6 +313,7 @@ body {
   height: 450px;
   border-radius: 30px 30px 0px 0px;
   color: white;
+  margin-top: 30px;
 }
 .service.special1 {
   border-radius: 30px 0 0 0;
@@ -335,4 +351,428 @@ body {
   position: relative;
   top: -50px;
   border-radius: 30px 30px 0px 0px;
+  color: black;
+}
+
+.destination {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 150px;
+}
+.destination > p {
+  color: #ffa451;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.destination > h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.boxdestination-container {
+  display: flex;
+  gap: 30px;
+}
+.boxdestination {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  position: relative;
+}
+.boxdestination img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.boxdestination .kutabox {
+  width: 245px;
+  height: 115px;
+  position: relative;
+  bottom: 90px;
+  left: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 15px 15px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.kutabox .reviewbeachbox {
+  font-size: 15px;
+  font-weight: 500;
+}
+.kutabox .reviewbeachbox span {
+  font-size: 10px;
+  margin-left: 10px;
+}
+.kutabox .locationkuta {
+  font-weight: 500;
+  font-size: 22px;
+}
+.kutabox .beachbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+  background-color: #f69d3c;
+  font-weight: 800;
+}
+.kutabox .price {
+  border-radius: 50%;
+  background-color: #1f4590;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 70px;
+  left: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+}
+
+.specialoffer {
+  width: 100%;
+  height: 225px;
+  background-color: #1f4590;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 200px 0;
+}
+.specialoffer .package {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+.package .offer {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+}
+.package .familypackage {
+  background-color: #7a92c41c;
+  width: 275px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+.specialoffer > button {
+  border-radius: 60px;
+  width: 200px;
+  height: 75px;
+  background-color: #f69d3c;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  border: none;
+}
+.specialoffer > button:hover {
+  border-radius: 60px;
+  width: 200px;
+  height: 75px;
+  background-color: #f69d3c;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px orange;
+  transform: scale(1.05);
+  border: none;
+}
+
+.performance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 150px;
+}
+.personperformance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.personperformance .leftpersonperformance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  width: 125px;
+  height: 150px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  left: 60px;
+  bottom: 100px;
+}
+.personperformance .leftpersonperformance img {
+  width: 40px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+.personperformance .leftpersonperformance p {
+  font-weight: bold;
+  font-size: 13px;
+}
+.personperformance .leftpersonperformance .percentage {
+  font-weight: bold;
+  font-size: 25px;
+}
+.personperformance .bottompersonperformance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  width: 225px;
+  height: 75px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  bottom: -30px;
+}
+.bottompersonperformance > .experience {
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+}
+.personperformance > img {
+  width: 70%;
+  height: auto;
+}
+.performanceabout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  padding-top: 50px;
+  padding-left: 75px;
+}
+.performanceabout .ourp {
+  text-transform: uppercase;
+  color: #f69d3c;
+  font-weight: bold;
+}
+.performanceabout h2 {
+  font-size: 40px;
+}
+.performanceabout .description {
+  width: 400px;
+  font-size: 15px;
+}
+.performanceabout .performancedetail {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  width: auto;
+  gap: 33px;
+}
+.performancedetail .number {
+  color: #f69d3c;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+.performancedetail .detaildescription {
+  width: 100px;
+  font-weight: 500;
+  color: grey;
+  font-size: 13px;
+}
+
+.review {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 400px;
+  gap: 25px;
+  margin-bottom: 150px;
+}
+.review .said {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding-top: 100px;
+  padding-left: 25px;
+}
+.said .theysaid {
+  color: orange;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.said h3 {
+  font-size: 40px;
+}
+.said .reviewdescription {
+  width: 520px;
+  opacity: 50%;
+  line-height: 30px;
+  font-size: 15px;
+}
+.review .personreview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}
+.personreview .personreviewbox {
+  background-color: white;
+  width: 325px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 30px 75px;
+}
+.personreviewbox img {
+  width: 50px;
+  height: 50px;
+}
+.personreviewbox .text {
+  font-size: 15px;
+}
+.personreviewbox sub {
+  font-weight: bold;
+}
+.personreviewbox .traveller {
+  color: #f69d3c;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  gap: 30px;
+  margin: 50px 0;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer .footerabout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+}
+.footer .footernav {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footerabout h2 {
+  font-size: 40px;
+}
+.footerabout span {
+  color: orange;
+  font-size: 25px;
+  font-weight: 500;
+}
+.footerabout .copyright {
+  font-size: 10px;
+  line-height: 25px;
+}
+.footerimage img {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+}
+.footerimage img:hover {
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+  cursor: pointer;
+  opacity: 70%;
+}
+.copyright a {
+  color: red;
+  text-decoration: underline;
+  font-size: 12px;
+  cursor: pointer;
+}
+.footernav h4 {
+  font-size: 20px;
+  text-align: center;
+}
+.footernav p {
+  font-size: 14px;
+  text-align: center;
+}
+.footernav p:hover {
+  font-size: 14px;
+  text-align: center;
+  opacity: 50%;
+  cursor: pointer;
+}
+.footernavspecial {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footernavspecial div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px gainsboro;
+}
+.footernavspecial div button {
+  border-radius: 30px;
+  background-color: #f69d3c;
+  border: none;
+  width: 70px;
+  height: 25px;
+  font-size: 10px;
+  color: white;
+}
+.footernavspecial div button:hover {
+  border-radius: 30px;
+  background-color: #f69d3c;
+  border: none;
+  width: 70px;
+  height: 25px;
+  font-size: 10px;
+  color: white;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.footernavspecial p:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+.footernavspecial div input {
+  border: none;
+  outline: none;
 }
