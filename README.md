@@ -36,10 +36,11 @@ _No additional libraries, preprocessors, or JavaScript were used._
 - Integrate booking functionality
 
 ## ⚠️ Limitations & Weaknesses
-Code Cleanliness: The HTML and CSS structure is intentionally not completely clean code because its main purpose is only for UI, some selectors are inconsistent and class naming can still be improved.
-Feature Completion: Some desired features (e.g. image carousel and form validation) were not completed because they would be more optimal using JavaScript.
+- Code Cleanliness: The HTML and CSS structure is intentionally not completely clean code because its main purpose is only for UI, some selectors are inconsistent and class naming can still be improved.
+- Feature Completion: Some desired features (e.g. image carousel and form validation) were not completed because they would be more optimal using JavaScript.
+- Scalability: Kode belum dioptimalkan untuk pengembangan jangka panjang atau integrasi fitur lanjutan
 
-**Why This Project?**  
+**Why I Made This Project?**  
 I wanted to challenge myself to **fully rely on HTML and CSS** — understanding how far core technologies can go before adding JavaScript or frameworks. This approach strengthens the foundation needed for building any website.
 
 ---
